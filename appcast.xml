@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Codex Mini Beta 更新</title>
+    <link>https://github.com/CoimgRain/Codex-Mini</link>
+    <description>Codex Mini Beta 官方更新源</description>
+    <language>zh-CN</language>
+    <item>
+      <title>Codex Mini Beta v3.0.3</title>
+      <sparkle:releaseNotesLink>https://github.com/CoimgRain/Codex-Mini/releases/tag/codex-mini-beta-v3.0.3</sparkle:releaseNotesLink>
+      <pubDate>Thu, 04 Jun 2026 08:59:30 +0000</pubDate>
+      <enclosure url="https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-beta-v3.0.3/Codex.Mini.Beta.v3.0.3.dmg" length="41766685" type="application/octet-stream" sparkle:version="303" sparkle:shortVersionString="3.0.3" sparkle:edSignature="a8yCDfM+/wC9ax8nZgyfyiWzLQze/wtIOsstgkm4rORPBql85ygStB6VYAP3WcuSc0v61SZJaxlvBYUa0eM+AA==" sparkle:installationType="package" />
+    </item>
+  </channel>
+</rss>
