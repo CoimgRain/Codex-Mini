@@ -6,18 +6,18 @@ Codex Mini 是一个把手机浏览器连接到 Mac 上 Codex Desktop 的轻量�
 
 ## 当前发布版本
 
-- 版本：Codex Mini Beta v3.0.4
-- 安装包：[直接下载 Codex Mini Beta v3.0.4.dmg](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-beta-v3.0.4/Codex.Mini.Beta.v3.0.4.dmg)
-- Release 页面：[codex-mini-beta-v3.0.4](https://github.com/CoimgRain/Codex-Mini/releases/tag/codex-mini-beta-v3.0.4)
+- 版本：Codex Mini Beta v3.0.5
+- 安装包：[直接下载 Codex Mini Beta v3.0.5.dmg](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-beta-v3.0.5/Codex.Mini.Beta.v3.0.5.dmg)
+- Release 页面：[codex-mini-beta-v3.0.5](https://github.com/CoimgRain/Codex-Mini/releases/tag/codex-mini-beta-v3.0.5)
 - 适用设备：Apple Silicon Mac
 - 本地局域网功能：免费使用
 - Pro 会员：支持服务器中转外网入口，离开同一个 Wi-Fi / 局域网后也可以远程操控自己的 Mac 上的 Codex
 
-### V3.0.4 重点更新
+### V3.0.5 重点更新
 
-- 新增 **App 内检查更新**：控制面板和菜单栏都可以直接检查最新版。
-- 优化 **后续升级体验**：新版会通过 App 内更新入口提示并下载，不需要手动找安装包。
-- 保留 v3.0.3 的远程连接、Pro 激活和 Safari 稳定性优化。
+- 修复 **App 内更新安装失败**：新版 DMG 改为直接包含 App，不再走 pkg 安装器。
+- 优化 **手动安装体验**：打开 DMG 后直接把 `Codex Mini Beta.app` 拖到 Applications 即可。
+- 保留 v3.0.4 的 App 内检查更新入口，以及远程连接、Pro 激活和 Safari 稳定性优化。
 
 ## 界面预览
 
@@ -39,9 +39,9 @@ QQ 群：**760669553**
 
 ## 安装与使用
 
-1. 在 Releases 页面下载带版本号的 `Codex.Mini.Beta.v3.0.4.dmg`
-2. 打开 DMG，双击里面的 `Codex Mini Beta Installer.pkg` 安装
-3. 安装完成后打开 `/Applications/Codex Mini Beta.app`
+1. 在 Releases 页面下载带版本号的 `Codex.Mini.Beta.v3.0.5.dmg`
+2. 打开 DMG，把里面的 `Codex Mini Beta.app` 拖到 `Applications` 文件夹
+3. 打开 `/Applications/Codex Mini Beta.app`
 4. 本地局域网功能免费可用：在同一个 Wi‑Fi 下，复制 App 里的局域网入口到手机浏览器打开即可使用
 5. 如果需要离开同一个 Wi‑Fi 后继续使用，在 App 的 Pro 会员区域开启 7 天试用或购买月度/季度/年度计划
 6. Pro 激活成功后，请重新复制 App 里的 **外网入口** 到手机上使用；之后手机不在同一个局域网时，也可以通过服务器中转连接自己的 Mac
