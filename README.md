@@ -6,18 +6,18 @@ Codex Mini 是一个把手机浏览器连接到 Mac 上 Codex Desktop 的轻量�
 
 ## 当前发布版本
 
-- 版本：Codex Mini Beta v3.0.1
-- 安装包：[直接下载 Codex Mini Beta v3.0.1.dmg](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-beta-v3.0.1/Codex.Mini.Beta.v3.0.1.dmg)
-- Release 页面：[codex-mini-beta-v3.0.1](https://github.com/CoimgRain/Codex-Mini/releases/tag/codex-mini-beta-v3.0.1)
+- 版本：Codex Mini Beta v3.0.2
+- 安装包：[直接下载 Codex Mini Beta v3.0.2.dmg](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-beta-v3.0.2/Codex.Mini.Beta.v3.0.2.dmg)
+- Release 页面：[codex-mini-beta-v3.0.2](https://github.com/CoimgRain/Codex-Mini/releases/tag/codex-mini-beta-v3.0.2)
 - 适用设备：Apple Silicon Mac
 - 本地局域网功能：免费使用
 - Pro 会员：支持服务器中转外网入口，离开同一个 Wi-Fi / 局域网后也可以远程操控自己的 Mac 上的 Codex
 
-### V3.0.1 重点更新
+### V3.0.2 重点更新
 
-- 优化 **保持亮屏 / 防休眠按钮**：状态显示更清晰，开启后更适合长任务持续运行。
-- 修复若干 **界面显示 bug**：改善顶部状态区、控制面板和手机端细节显示。
-- 继续保留 Pro 会员外网远程使用：开启试用或购买 Pro 后，手机可以通过服务器中转连接自己的 Mac。
+- 优化 **外网远程连接体验**：远程打开后线程列表、运行状态和聊天同步更稳定。
+- 优化 **Pro 会员激活体验**：激活后状态识别更可靠，刷新或切换入口后更少误判。
+- 修复若干 **Safari 显示与加载问题**：改善远程页面刷新、状态提示和在线状态显示。
 
 ## 界面预览
 
@@ -39,7 +39,7 @@ QQ 群：**760669553**
 
 ## 安装与使用
 
-1. 在 Releases 页面下载带版本号的 `Codex.Mini.Beta.v3.0.1.dmg`
+1. 在 Releases 页面下载带版本号的 `Codex.Mini.Beta.v3.0.2.dmg`
 2. 打开 DMG，双击里面的 `Codex Mini Beta Installer.pkg` 安装
 3. 安装完成后打开 `/Applications/Codex Mini Beta.app`
 4. 本地局域网功能免费可用：在同一个 Wi‑Fi 下，复制 App 里的局域网入口到手机浏览器打开即可使用
