@@ -6,14 +6,14 @@ Codex Mini 是一个把手机浏览器连接到 Mac 上 Codex Desktop 的轻量�
 
 ## 当前发布版本
 
-- 版本：Codex Mini Beta v3.0.2
-- 安装包：[直接下载 Codex Mini Beta v3.0.2.dmg](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-beta-v3.0.2/Codex.Mini.Beta.v3.0.2.dmg)
-- Release 页面：[codex-mini-beta-v3.0.2](https://github.com/CoimgRain/Codex-Mini/releases/tag/codex-mini-beta-v3.0.2)
+- 版本：Codex Mini Beta v3.0.3
+- 安装包：[直接下载 Codex Mini Beta v3.0.3.dmg](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-beta-v3.0.3/Codex.Mini.Beta.v3.0.3.dmg)
+- Release 页面：[codex-mini-beta-v3.0.3](https://github.com/CoimgRain/Codex-Mini/releases/tag/codex-mini-beta-v3.0.3)
 - 适用设备：Apple Silicon Mac
 - 本地局域网功能：免费使用
 - Pro 会员：支持服务器中转外网入口，离开同一个 Wi-Fi / 局域网后也可以远程操控自己的 Mac 上的 Codex
 
-### V3.0.2 重点更新
+### V3.0.3 重点更新
 
 - 优化 **外网远程连接体验**：远程打开后线程列表、运行状态和聊天同步更稳定。
 - 优化 **Pro 会员激活体验**：激活后状态识别更可靠，刷新或切换入口后更少误判。
@@ -39,7 +39,7 @@ QQ 群：**760669553**
 
 ## 安装与使用
 
-1. 在 Releases 页面下载带版本号的 `Codex.Mini.Beta.v3.0.2.dmg`
+1. 在 Releases 页面下载带版本号的 `Codex.Mini.Beta.v3.0.3.dmg`
 2. 打开 DMG，双击里面的 `Codex Mini Beta Installer.pkg` 安装
 3. 安装完成后打开 `/Applications/Codex Mini Beta.app`
 4. 本地局域网功能免费可用：在同一个 Wi‑Fi 下，复制 App 里的局域网入口到手机浏览器打开即可使用
