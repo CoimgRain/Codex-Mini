@@ -6,10 +6,10 @@
     <description>Codex Mini Beta 官方更新源</description>
     <language>zh-CN</language>
     <item>
-      <title>Codex Mini Beta v3.0.3</title>
-      <sparkle:releaseNotesLink>https://github.com/CoimgRain/Codex-Mini/releases/tag/codex-mini-beta-v3.0.3</sparkle:releaseNotesLink>
-      <pubDate>Thu, 04 Jun 2026 08:59:30 +0000</pubDate>
-      <enclosure url="https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-beta-v3.0.3/Codex.Mini.Beta.v3.0.3.dmg" length="41766685" type="application/octet-stream" sparkle:version="303" sparkle:shortVersionString="3.0.3" sparkle:edSignature="a8yCDfM+/wC9ax8nZgyfyiWzLQze/wtIOsstgkm4rORPBql85ygStB6VYAP3WcuSc0v61SZJaxlvBYUa0eM+AA==" sparkle:installationType="package" />
+      <title>Codex Mini Beta v3.0.4</title>
+      <sparkle:releaseNotesLink>https://github.com/CoimgRain/Codex-Mini/releases/tag/codex-mini-beta-v3.0.4</sparkle:releaseNotesLink>
+      <pubDate>Thu, 04 Jun 2026 09:08:47 +0000</pubDate>
+      <enclosure url="https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-beta-v3.0.4/Codex.Mini.Beta.v3.0.4.dmg" length="42638719" type="application/octet-stream" sparkle:version="304" sparkle:shortVersionString="3.0.4" sparkle:edSignature="apgswKxnTZd5X+8cEGgQR+KkLqBD+PXHcGZ0Qdy58s1HrbXJMj/1Ii4Ns7qaT/5pmujirGNnSBTrJNlS1XLmDQ==" sparkle:installationType="package" />
     </item>
   </channel>
 </rss>
