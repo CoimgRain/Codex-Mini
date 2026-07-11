@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>Codex Mini 更新</title>
+    <title>GPT Mini 更新</title>
     <link>https://github.com/CoimgRain/Codex-Mini</link>
-    <description>Codex Mini 官方更新源</description>
+    <description>GPT Mini 官方更新源</description>
     <language>zh-CN</language>
     <item>
-      <title>Codex Mini v4.5.2</title>
-      <sparkle:releaseNotesLink>https://github.com/CoimgRain/Codex-Mini/releases/tag/codex-mini-v4.5.2</sparkle:releaseNotesLink>
-      <pubDate>Mon, 29 Jun 2026 21:27:18 +0000</pubDate>
-      <enclosure url="https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v4.5.2/CodexMini_v4.5.2_macOS_AppleSilicon.dmg" length="42888179" type="application/octet-stream" sparkle:version="452" sparkle:shortVersionString="4.5.2" sparkle:edSignature="s4m/WFaPcjpsXmWY45NXRnfRM7nX89n1D5rXn0EGEqQNDf4+Fyrs1bLQeBcvEMnxXbr9+MMRWYBn7Mii8n7iAQ==" />
+      <title>GPT Mini v5.2.0</title>
+      <sparkle:releaseNotesLink>https://github.com/CoimgRain/Codex-Mini/releases/tag/codex-mini-v5.2.0</sparkle:releaseNotesLink>
+      <pubDate>Sat, 11 Jul 2026 11:04:22 +0000</pubDate>
+      <enclosure url="https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.2.0/GPTMini_v5.2.0_macOS_AppleSilicon.dmg" length="43591156" type="application/octet-stream" sparkle:version="520" sparkle:shortVersionString="5.2.0" sparkle:edSignature="m9q1p7QCjqfNeH6wqWwxCi4s2CIGMvWiEMQU0f+FnOrOa84wzieqtSO1GYPHzZ1NOf8t2M7BJ4iJHVXIOrGIDQ==" />
     </item>
   </channel>
 </rss>

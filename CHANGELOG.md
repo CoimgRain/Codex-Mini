@@ -1,5 +1,17 @@
 # Changelog
 
+## v5.2.0 - 2026-07-11
+
+- Officially renamed the user-facing product from Codex Mini to GPT Mini while preserving existing settings, entitlement, thread, and access data during upgrades.
+- Added compatibility with the merged ChatGPT/Codex desktop client on macOS and Windows, including controlled-client startup and current model/reasoning state detection.
+- Introduced the Liquid Glass interface across thread navigation, status controls, composer, menus, and responsive mobile/tablet layouts.
+- Added three-ring context and account-quota visualization, expanded model/reasoning controls, standard/fast mode switching, and per-status display customization.
+- Improved cached thread switching, background refresh after returning to the page, 40-message history paging, and on-demand rendering of detailed process steps.
+- Improved tool-process capsules with localized, natural-language labels while filtering internal stage markers and parser noise from replies.
+- Expanded attachment and generated-image preview/download support, queue controls, clickable URLs, long thread titles, and mobile scrolling behavior.
+- Fixed model selection briefly reverting to the previous model, duplicate pasted images, broken queue deletion, missing failure details, and stale thread content.
+- Published matching Apple Silicon, Intel, Windows, and Android download assets for GPT Mini v5.2.0.
+
 ## v4.5.2 - 2026-06-30
 
 - Published Apple Silicon, Intel, Windows, and Android download assets for Codex Mini v4.5.2.
