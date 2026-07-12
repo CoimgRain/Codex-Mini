@@ -1,5 +1,19 @@
 # Changelog
 
+## v5.2.1 - 2026-07-12
+
+- Added online verification for bare domains so only real reachable websites become clickable links.
+- Changed the context compression action to use GPT's native compact command instead of sending plain text.
+- Improved localized failure details for quota, sign-in, network, connection-reset, and service errors.
+- Improved automatic standard/fast mode refresh without opening the model or reasoning menu.
+- Fixed newly created tasks becoming temporarily unselectable when the desktop client used a provisional task ID.
+- Fixed internal reasoning-stage headings appearing as large bold reply text instead of compact process capsules.
+- Fixed repeated normal-task creation on Windows after completing a reply.
+- Fixed intermittent local relay connection resets during message sending and status refresh.
+- Improved Mac guardian behavior after membership expiry, remote activation, and lid-close transitions.
+- Fixed Android non-Liquid-Glass composer and light thread-menu visibility combinations.
+- Published matching Apple Silicon, Intel, Windows, and Android download assets for GPT Mini v5.2.1.
+
 ## v5.2.0 - 2026-07-11
 
 - Officially renamed the user-facing product from Codex Mini to GPT Mini while preserving existing settings, entitlement, thread, and access data during upgrades.
