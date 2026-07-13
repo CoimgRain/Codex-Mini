@@ -1,5 +1,19 @@
 # Changelog
 
+## v5.2.2 - 2026-07-14
+
+- Added incremental live rendering for GPT reasoning and final replies, with smoother handoff to completed task history.
+- Added native task-plan cards with expandable steps, progress, and code-change summaries.
+- Added iOS Bark notifications for Pro and Max users when tasks complete or stop with an error.
+- Added Max multi-device connections with a fixed primary device, per-device colors, and quick switching.
+- Improved model, reasoning, and standard/fast mode controls for newly created tasks.
+- Improved model ordering, full/short model-name display, fast-mode status, and responsive control sizing.
+- Improved cached task switching, iPad sidebar behavior, long task titles, pinned styling, and streaming Markdown rendering.
+- Fixed repeated reasoning or reply content during live output and after task completion.
+- Fixed Max entitlement state being lost during startup or after switching to a secondary device.
+- Fixed internal process labels, bold stage markers, and non-reply content leaking into the main conversation.
+- Published matching Apple Silicon, Intel, Windows, and Android download assets for GPT Mini v5.2.2.
+
 ## v5.2.1 - 2026-07-12
 
 - Added online verification for bare domains so only real reachable websites become clickable links.
