@@ -16,23 +16,29 @@ GPT Mini 是一个把手机浏览器连接到电脑 ChatGPT 中 Codex 的轻量�
 
 ## 当前发布版本
 
-- 版本：v5.2.2（macOS 与 Windows 已对齐）
-- 🍎 macOS · Apple 芯片（M1/M2/M3/M4…）：[GPT Mini v5.2.2（Apple Silicon 版）](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.2.2/GPTMini_v5.2.2_macOS_AppleSilicon.dmg)
-- 💻 macOS · Intel 芯片（x86）：[GPT Mini v5.2.2（Intel Mac 版）](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.2.2/GPTMini_v5.2.2_macOS_Intel.dmg)
-- 🪟 Windows（10 / 11，64 位）：[GPT Mini v5.2.2（Windows 版）](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.2.2/GPTMini_v5.2.2_Windows_Setup.exe)
-- 🤖 **Android 手机专用**：[GPT Mini Android v1.3（安卓版）](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.2.2/Codex-Mini-Android-v1.3.apk)
+- 版本：v5.3.0（macOS 与 Windows 已对齐）
+- 🍎 macOS · Apple 芯片（M1/M2/M3/M4…）：[GPT Mini v5.3.0（Apple Silicon 版）](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.3.0/GPTMini_v5.3.0_macOS_AppleSilicon.dmg)
+- 💻 macOS · Intel 芯片（x86）：[GPT Mini v5.3.0（Intel Mac 版）](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.3.0/GPTMini_v5.3.0_macOS_Intel.dmg)
+- 🪟 Windows（10 / 11，64 位）：[GPT Mini v5.3.0（Windows 版）](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.3.0/GPTMini_v5.3.0_Windows_Setup.exe)
+- 🤖 **Android 手机专用**：[GPT Mini Android v1.3（安卓版）](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.3.0/Codex-Mini-Android-v1.3.apk)
 - 图文安装说明：[macOS 版（PDF）](docs/Codex%20Mini%20Mac%20%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.pdf) ｜ [Windows 版（PDF）](docs/Codex%20Mini%20Windows%20%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.pdf)
-- Release 页面：[codex-mini-v5.2.2](https://github.com/CoimgRain/Codex-Mini/releases/tag/codex-mini-v5.2.2)
+- Release 页面：[codex-mini-v5.3.0](https://github.com/CoimgRain/Codex-Mini/releases/tag/codex-mini-v5.3.0)
 - 安装方式：macOS 打开 DMG 并把 `GPT Mini.app` 拖进 `Applications`；Windows 双击 EXE 安装（无需管理员权限、无需自己安装 Node）；Android 下载 APK 后按系统提示安装
 
-### 最新版 V5.2.2
+> ⚠️ **5.3.0 外网入口已从 HTTP 升级为 HTTPS**
+>
+> 升级电脑端后，请重新扫描二维码或重新复制完整网址。iPhone / iPad 上旧的主屏幕 Web App 建议删除后，用新的 HTTPS 网址重新添加；也可以把旧网址开头的 `http://` 手动改为 `https://`。后续 HTTP 入口可能逐步停用，继续使用旧地址可能无法连接。
 
-- **回复真正实时显示**：GPT 思考过程和正文可持续增量呈现，并减少完成后重复播放或重新渲染
-- **原生计划卡片**：任务执行时可查看当前步骤、整体进度和代码改动概览
-- **多设备连接**：Max 用户可保存多台电脑并快速切换，主设备权限和设备状态同步更稳定
-- **iOS 消息通知**：Pro / Max 用户可通过 Bark 接收任务完成与异常中断提醒
-- **模型控制更准确**：新建任务可立即识别并切换模型、推理强度和快速模式，模型名称与闪电状态显示更稳定
-- **移动端细节优化**：改进 iPad 线程侧栏、长标题、置顶样式、设备配色和流式 Markdown 显示
+### 最新版 V5.3.0
+
+- **外网入口升级 HTTPS**：Mac、Windows 控制面板和手机端统一使用加密外网入口
+- **新建任务设置更完整**：可选择项目、运行位置、Git 分支和独立 Worktree，并在线程列表识别 Worktree
+- **局域网自动加密直连**：同一局域网优先使用 DataChannel 直连，离开局域网后自动回退公网线路
+- **模型与推理同步官方**：更新官方模型命名，并按账号真实能力显示和切换“最高”推理强度
+- **手机端液态玻璃与缓存优化**：统一新建任务、计划、待发送和键盘布局，切换线程时更快恢复状态并减少重复流量
+- **通知不再抢当前任务**：后台任务完成只显示未读和系统通知，用户点击通知后才跳到对应任务
+- **Windows 应用内更新**：控制面板可检查新版本，并在后续升级中一键完成下载安装
+- **稳定性修复**：修复 iOS 主屏幕 Web App 凭证、收起项目切换、最小化窗口发送、项目漏识别、模型徽标灰色和重复设备等问题
 
 ### GPT Mini V5 重大更新总览
 
@@ -66,7 +72,7 @@ QQ 群：**760669553**
 
 ## Windows 版本
 
-官方 Windows 安装包已经随最新 Release 一起发布，文件名是 `GPTMini_v5.2.2_Windows_Setup.exe`。Windows 版支持在 Windows 桌面环境中运行 GPT Mini 控制面板，并保留手机网页控制、线程列表、CDP 受控 Codex、局域网访问和 Pro 外网入口等核心能力。
+官方 Windows 安装包已经随最新 Release 一起发布，文件名是 `GPTMini_v5.3.0_Windows_Setup.exe`。Windows 版支持在 Windows 桌面环境中运行 GPT Mini 控制面板，并保留手机网页控制、线程列表、CDP 受控 Codex、局域网访问和 Pro 外网入口等核心能力。
 
 ## Android 版本
 
@@ -76,16 +82,17 @@ Android 手机专用安装包已经随最新 Release 一起提供，文件名是
 
 ## 安装与使用
 
-1. 按系统下载对应的 `GPTMini_v5.2.2_macOS_AppleSilicon.dmg`、`GPTMini_v5.2.2_macOS_Intel.dmg`、`GPTMini_v5.2.2_Windows_Setup.exe`；安卓手机用户下载 `Codex-Mini-Android-v1.3.apk`
+1. 按系统下载对应的 `GPTMini_v5.3.0_macOS_AppleSilicon.dmg`、`GPTMini_v5.3.0_macOS_Intel.dmg`、`GPTMini_v5.3.0_Windows_Setup.exe`；安卓手机用户下载 `Codex-Mini-Android-v1.3.apk`
 2. macOS 安装前完整删除旧 `Codex Mini Beta.app`，建议用第三方卸载工具清理旧 App、旧 LaunchAgent 和旧运行目录
 3. macOS 打开 DMG，把 `GPT Mini.app` 拖到 `Applications`；Windows 直接运行 EXE 安装；Android 下载 APK 后按系统提示安装
 4. 打开 GPT Mini
-5. 同一 Wi‑Fi 下可直接使用局域网入口；离开局域网可使用 Pro 外网入口
-6. 建议把手机网页添加到主屏幕，体验更接近 App
+5. 从控制面板重新扫描二维码或复制新的 HTTPS 完整网址；不要继续沿用旧的 HTTP 外网地址
+6. 同一 Wi‑Fi 下会优先使用局域网加密直连；离开局域网后自动回退 Pro 公网线路
+7. iPhone / iPad 如已添加旧主屏幕 Web App，请删除旧图标后用新的 HTTPS 网址重新添加
 
 ## 添加到主屏幕
 
-iPhone 上打开 GPT Mini 网页后，按下面三步操作：
+iPhone 上先用新的 HTTPS 完整网址打开 GPT Mini；如果桌面已有旧 HTTP Web App，请先删除旧图标，再按下面三步重新添加：
 
 1. 点浏览器底部或菜单里的“分享”
 2. 如果没看到“添加到主屏幕”，先点“查看更多”

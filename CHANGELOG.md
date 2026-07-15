@@ -1,5 +1,17 @@
 # Changelog
 
+## v5.3.0 - 2026-07-16
+
+- Upgraded the public remote-access entry from HTTP to HTTPS on macOS and Windows. Users should rescan or recopy the full URL; existing iOS Home Screen Web Apps should be re-added from the HTTPS URL.
+- Added project, runtime location, Git branch, and isolated Worktree choices when creating a task, plus Worktree markers in the task list.
+- Added automatic encrypted LAN DataChannel routing with public-relay fallback and improved multi-device primary-device deduplication.
+- Updated model labels to match the current official catalog and exposed the highest reasoning level only when the account actually supports it.
+- Added Windows in-app update checks and one-click installation for future releases.
+- Improved Liquid Glass cards, task-plan progress, queued-message presentation, iOS keyboard layout, task-state caching, and background polling efficiency.
+- Changed completion notifications so background tasks no longer replace the task currently being viewed; navigation happens only after the user clicks the notification.
+- Fixed iOS Home Screen Web App credential recovery, collapsed pinned/project task selection, minimized-window sending, missing projects, stale gray model badges, and duplicate Mac device entries.
+- Published matching Apple Silicon, Intel, Windows x64, and Android download assets for GPT Mini v5.3.0.
+
 ## v5.2.2 - 2026-07-14
 
 - Added incremental live rendering for GPT reasoning and final replies, with smoother handoff to completed task history.
