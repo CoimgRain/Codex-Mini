@@ -1,5 +1,17 @@
 # Changelog
 
+## v5.3.1 - 2026-07-16
+
+- Added automatic controlled-mode handoff when GPT Mini is already running and the user opens the official GPT client, while preserving confirmation for an existing working session.
+- Added the latest Android v1.25.6 ARM64 package from the independent Android release repository.
+- Improved task-plan expansion, progress animation, high-refresh rendering, and completed-task history restoration.
+- Improved automatic retry and recovery for initial configuration and encrypted LAN connection negotiation.
+- Improved Mac controlled-mode handoff latency and Windows controlled-client status tolerance.
+- Fixed normal-chat task creation, cross-project selection, and accidental project inheritance.
+- Fixed branched tasks created as a new task or Worktree not appearing in the mobile task list.
+- Fixed reasoning-strength badges showing state from another task after switching tasks.
+- Published matching Apple Silicon, Intel, Windows x64, and Android download assets for GPT Mini v5.3.1.
+
 ## v5.3.0 - 2026-07-16
 
 - Upgraded the public remote-access entry from HTTP to HTTPS on macOS and Windows. Users should rescan or recopy the full URL; existing iOS Home Screen Web Apps should be re-added from the HTTPS URL.
