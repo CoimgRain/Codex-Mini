@@ -1,5 +1,19 @@
 # Changelog
 
+## v5.3.2 - 2026-07-17
+
+- Added customizable three-ring context, 5-hour quota, and weekly quota visualization.
+- Added API Key and CCSwitch model-catalog discovery while preserving existing account and catalog behavior.
+- Added an optional real-time progress notification setting, disabled by default.
+- Improved model-specific reasoning-level discovery so the menu shows only capabilities supported by the current model.
+- Improved model and reasoning menu caching, settings layout, version display, and Grok process-capsule presentation.
+- Fixed API-login models appearing gray or switching to the wrong catalog entry.
+- Fixed Kimi K3 and other relay models reporting a failed footer confirmation after a successful switch.
+- Fixed queued-message guidance targeting after quota notices changed the composer layout.
+- Fixed incomplete Grok/relay token events reducing context usage to an incorrect value near 1%.
+- Fixed explicit user-stopped tasks being reported as model failures.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v1.25.10 ARM64 download assets for GPT Mini v5.3.2.
+
 ## v5.3.1 - 2026-07-16
 
 - Added automatic controlled-mode handoff when GPT Mini is already running and the user opens the official GPT client, while preserving confirmation for an existing working session.
