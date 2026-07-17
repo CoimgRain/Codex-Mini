@@ -1,5 +1,16 @@
 # Changelog
 
+## v5.3.3 - 2026-07-17
+
+- Enabled the first public Windows one-click update target for users already running GPT Mini 5.3.2 or later.
+- Improved new-task defaults to use local execution, the project's main/default branch, and no extra Worktree by default.
+- Improved project task creation against the latest GPT sidebar project identifiers and branch-loading behavior.
+- Improved desktop-upgrade prompts and settings typography hierarchy across the shared mobile interface.
+- Fixed newly created tasks being replaced by the previously selected task during list refresh.
+- Fixed project task creation failures being reported as a generic CDP port problem instead of the actual failing stage.
+- Fixed highest and ultra reasoning badges temporarily using the medium-state color before live capabilities finished loading.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v1.25.10 ARM64 download assets for GPT Mini v5.3.3.
+
 ## v5.3.2 - 2026-07-17
 
 - Added customizable three-ring context, 5-hour quota, and weekly quota visualization.
