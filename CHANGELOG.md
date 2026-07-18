@@ -9,7 +9,7 @@
 - Fixed newly created tasks being replaced by the previously selected task during list refresh.
 - Fixed project task creation failures being reported as a generic CDP port problem instead of the actual failing stage.
 - Fixed highest and ultra reasoning badges temporarily using the medium-state color before live capabilities finished loading.
-- Published matching Apple Silicon, Intel, Windows x64, and Android v1.25.10 ARM64 download assets for GPT Mini v5.3.3.
+- Refreshed the GPT Mini v5.3.3 Android download asset to the independent repository's v2.0.0 universal WebView build.
 
 ## v5.3.2 - 2026-07-17
 
