@@ -1,5 +1,14 @@
 # Changelog
 
+## v5.3.4 - 2026-07-19
+
+- Added new-task creation inside the currently selected SSH remote project on macOS and Windows.
+- Improved entitlement-state synchronization and secure relay validation across both desktop platforms.
+- Reworked completion and live-progress notification scanning to process only appended conversation data.
+- Fixed notification scanning saturating the local backend when many recent or long conversations were present.
+- Fixed model switching from sending a global Escape action that could interrupt a running task.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.2 universal WebView download assets.
+
 ## v5.3.3 - 2026-07-17
 
 - Enabled the first public Windows one-click update target for users already running GPT Mini 5.3.2 or later.

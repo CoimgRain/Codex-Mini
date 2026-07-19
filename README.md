@@ -16,28 +16,27 @@ GPT Mini 是一个把手机浏览器连接到电脑 ChatGPT 中 Codex 的轻量�
 
 ## 当前发布版本
 
-- 版本：v5.3.3（macOS 与 Windows 已对齐）
-- 🍎 macOS · Apple 芯片（M1/M2/M3/M4…）：[GPT Mini v5.3.3（Apple Silicon 版）](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.3.3/GPTMini_v5.3.3_macOS_AppleSilicon.dmg)
-- 💻 macOS · Intel 芯片（x86）：[GPT Mini v5.3.3（Intel Mac 版）](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.3.3/GPTMini_v5.3.3_macOS_Intel.dmg)
-- 🪟 Windows（10 / 11，64 位）：[GPT Mini v5.3.3（Windows 版）](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.3.3/GPTMini_v5.3.3_Windows_Setup.exe)
-- 🤖 **Android 手机专用**：[GPT Mini Android v2.0.0（通用 WebView 版）](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.3.3/GPTMini_Android_v2.0.0.apk)
+- 版本：v5.3.4（macOS 与 Windows 已对齐）
+- 🍎 macOS · Apple 芯片（M1/M2/M3/M4…）：[GPT Mini v5.3.4（Apple Silicon 版）](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.3.4/GPTMini_v5.3.4_macOS_AppleSilicon.dmg)
+- 💻 macOS · Intel 芯片（x86）：[GPT Mini v5.3.4（Intel Mac 版）](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.3.4/GPTMini_v5.3.4_macOS_Intel.dmg)
+- 🪟 Windows（10 / 11，64 位）：[GPT Mini v5.3.4（Windows 版）](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.3.4/GPTMini_v5.3.4_Windows_Setup.exe)
+- 🤖 **Android 手机专用**：[GPT Mini Android v2.0.2（通用 WebView 版）](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.3.4/GPTMini_Android_v2.0.2.apk)
 - 图文安装说明：[macOS 版（PDF）](docs/Codex%20Mini%20Mac%20%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.pdf) ｜ [Windows 版（PDF）](docs/Codex%20Mini%20Windows%20%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.pdf)
-- Release 页面：[codex-mini-v5.3.3](https://github.com/CoimgRain/Codex-Mini/releases/tag/codex-mini-v5.3.3)
+- Release 页面：[codex-mini-v5.3.4](https://github.com/CoimgRain/Codex-Mini/releases/tag/codex-mini-v5.3.4)
 - 安装方式：macOS 打开 DMG 并把 `GPT Mini.app` 拖进 `Applications`；Windows 双击 EXE 安装（无需管理员权限、无需自己安装 Node）；Android 下载 APK 后按系统提示安装
 
 > ⚠️ **5.3.0 外网入口已从 HTTP 升级为 HTTPS**
 >
 > 升级电脑端后，请重新扫描二维码或重新复制完整网址。iPhone / iPad 上旧的主屏幕 Web App 建议删除后，用新的 HTTPS 网址重新添加；也可以把旧网址开头的 `http://` 手动改为 `https://`。后续 HTTP 入口可能逐步停用，继续使用旧地址可能无法连接。
 
-### 最新版 V5.3.3
+### 最新版 V5.3.4
 
-- **Windows 一键自动更新正式可用**：安装过 5.3.2 或更高版本后，可自动下载、校验、覆盖安装并重新打开
-- **新建任务默认值对齐 GPT**：默认本地运行、项目主线/默认分支，并且不默认创建额外工作树
-- **项目内新建任务更稳定**：兼容新版 GPT 不透明项目 ID，失败时返回具体阶段，不再统一误报端口异常
-- **新建后保持当前任务**：列表刷新不会再自动跳回旧任务，后续文字和附件会继续发到新任务
-- **推理强度显示修复**：“最高 / 极高+”在读取阶段会使用正确档位颜色，不再误用中档状态
-- **界面层级更清晰**：升级提示、设置标题、副标题和状态信息的布局与对比度进一步统一
-- **Android 安装包**：已同步独立 Android 仓库最新的 v2.0.0 通用 WebView 安装包，体积约 5.2 MB
+- **SSH 当前项目可直接新建任务**：在线程菜单选择 SSH 连接后，可在当前远程项目里直接创建新任务
+- **通知扫描更轻量**：完成通知与实时进度只处理新增会话内容，多任务和长会话下线程列表响应更稳定
+- **授权与连接安全增强**：外网连接进一步收紧安全传输校验，Pro、Max 与 SSH 能力以服务器确认结果为准
+- **运行中切换模型更稳**：关闭模型菜单时不再触发可能中断当前任务的全局取消按键
+- **Mac / Windows 后端同步**：两端正式安装包均包含本轮安全、SSH、通知扫描和模型切换修复
+- **Android 安装包**：已同步独立 Android 仓库最新的 v2.0.2 通用 WebView 安装包，体积约 5.2 MB
 
 ### GPT Mini V5 重大更新总览
 
@@ -71,17 +70,17 @@ QQ 群：**760669553**
 
 ## Windows 版本
 
-官方 Windows 安装包已经随最新 Release 一起发布，文件名是 `GPTMini_v5.3.3_Windows_Setup.exe`。Windows 版支持在 Windows 桌面环境中运行 GPT Mini 控制面板，并保留手机网页控制、线程列表、CDP 受控 Codex、局域网访问、Pro 外网入口和一键自动更新等核心能力。
+官方 Windows 安装包已经随最新 Release 一起发布，文件名是 `GPTMini_v5.3.4_Windows_Setup.exe`。Windows 版支持在 Windows 桌面环境中运行 GPT Mini 控制面板，并保留手机网页控制、线程列表、CDP 受控 Codex、局域网访问、Pro 外网入口和一键自动更新等核心能力。
 
 ## Android 版本
 
-Android 手机专用安装包来自独立仓库的最新 Release，本次文件名是 `GPTMini_Android_v2.0.0.apk`。这是不绑定 CPU 架构的轻量系统 WebView 版本，可直接下载 APK 到安卓手机安装；桌面端仍需在自己的 Mac 或 Windows 电脑上运行 GPT Mini。
+Android 手机专用安装包来自独立仓库的最新 Release，本次文件名是 `GPTMini_Android_v2.0.2.apk`。这是不绑定 CPU 架构的轻量系统 WebView 版本，可直接下载 APK 到安卓手机安装；桌面端仍需在自己的 Mac 或 Windows 电脑上运行 GPT Mini。
 
 社区项目 [atuizz/codex-max](https://github.com/atuizz/codex-max) 仍可作为另一个 Windows 方向参考。
 
 ## 安装与使用
 
-1. 按系统下载对应的 `GPTMini_v5.3.3_macOS_AppleSilicon.dmg`、`GPTMini_v5.3.3_macOS_Intel.dmg`、`GPTMini_v5.3.3_Windows_Setup.exe`；安卓手机用户下载 `GPTMini_Android_v2.0.0.apk`
+1. 按系统下载对应的 `GPTMini_v5.3.4_macOS_AppleSilicon.dmg`、`GPTMini_v5.3.4_macOS_Intel.dmg`、`GPTMini_v5.3.4_Windows_Setup.exe`；安卓手机用户下载 `GPTMini_Android_v2.0.2.apk`
 2. macOS 安装前完整删除旧 `Codex Mini Beta.app`，建议用第三方卸载工具清理旧 App、旧 LaunchAgent 和旧运行目录
 3. macOS 打开 DMG，把 `GPT Mini.app` 拖到 `Applications`；Windows 直接运行 EXE 安装；Android 下载 APK 后按系统提示安装
 4. 打开 GPT Mini
