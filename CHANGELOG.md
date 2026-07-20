@@ -1,5 +1,16 @@
 # Changelog
 
+## v5.3.5 - 2026-07-20
+
+- Added Windows system-tray residency so minimizing or closing the control panel keeps GPT Mini available and the window can be restored from the tray.
+- Improved project and task synchronization with the latest GPT sidebar identifiers, deletion state, pinned order, and provisional-to-final task identity changes on macOS and Windows.
+- Improved SSH project and task ordering to follow the GPT sidebar before falling back to update time.
+- Improved model, reasoning-level, and permission handling before the first message in a newly created blank task.
+- Fixed newly created tasks jumping back to the previously selected task during list refresh.
+- Fixed successful task creation being reported as failed when GPT had already entered the new blank task.
+- Fixed branch detection for Git repositories that do not yet have an initial commit.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
 ## v5.3.4 - 2026-07-19
 
 - Added new-task creation inside the currently selected SSH remote project on macOS and Windows.
