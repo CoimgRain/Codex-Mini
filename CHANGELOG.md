@@ -1,5 +1,16 @@
 # Changelog
 
+## v5.3.6 - 2026-07-22
+
+- Added automatic Worktree creation when selecting a non-main branch before creating a task on macOS and Windows.
+- Added Mermaid flowchart rendering with dark-theme colors, full-screen viewing, and horizontal navigation.
+- Added a unified pinned area for pinned tasks and pinned projects, plus an optional top fade-glass appearance setting.
+- Improved task selection, project grouping, pin state, and ordering to follow the official GPT desktop task list more closely.
+- Improved foreground resume and completed-result display while moving full-history reconciliation to the background.
+- Fixed SSH groups disappearing after refresh, pinned items falling to the bottom, and completed replies replaying briefly after reopening a task.
+- Fixed Windows update verification on PowerShell environments without `Get-FileHash` by using the built-in .NET SHA-256 implementation while retaining mandatory size and digest checks.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
 ## v5.3.5 - 2026-07-20
 
 - Added Windows system-tray residency so minimizing or closing the control panel keeps GPT Mini available and the window can be restored from the tray.
