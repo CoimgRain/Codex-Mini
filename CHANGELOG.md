@@ -1,5 +1,12 @@
 # Changelog
 
+## v5.4.1 - 2026-07-26
+
+- Improved Windows control-panel startup responsiveness by rendering the first screen before serial low-priority service and status work begins.
+- Improved controlled GPT readiness checks with bounded TCP/CDP phases, cached Node discovery, and cooldown protection against repeated relaunches.
+- Reduced repeated listener enumeration and synchronous status work that could make the Windows panel feel stuck while opening.
+- Published the Windows x64 installer only; macOS remains on v5.4.0 and Android remains on v2.0.3.
+
 ## v5.4.0 - 2026-07-26
 
 - Added goal and plan modes to the mobile interface, including native goal actions and full-screen Markdown plan review, adjustment, execution, and skip controls.
