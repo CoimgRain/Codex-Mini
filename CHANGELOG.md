@@ -1,5 +1,17 @@
 # Changelog
 
+## v5.4.0 - 2026-07-26
+
+- Added goal and plan modes to the mobile interface, including native goal actions and full-screen Markdown plan review, adjustment, execution, and skip controls.
+- Added complete touch scrolling for long plans while keeping the action area and adjustment input accessible.
+- Improved the add menu with composer-matched Liquid Glass styling, full-row hit targets, outside dismissal, lower opening cost, and more stable mobile keyboard focus.
+- Improved context usage reporting to follow the latest real GPT/Codex value after compaction instead of retaining a locally inferred older value.
+- Improved entitlement resilience so transient network or service failures retain a locally valid membership and retry automatically.
+- Fixed Windows control panels reusing an incompatible older backend, which could break Pro status, phone connectivity, notifications, new-task options, attachments, and version reporting together.
+- Fixed web-push subscription failures, misleading new-task read errors, attachments downloading as file.json, missing icon/math assets, and incorrect local attachment routing.
+- Fixed plan-card overlap, blocked touch scrolling, and add-menu areas that could not be tapped.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
 ## v5.3.6 - 2026-07-22
 
 - Added automatic Worktree creation when selecting a non-main branch before creating a task on macOS and Windows.
