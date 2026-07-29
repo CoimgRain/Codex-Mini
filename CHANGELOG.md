@@ -1,5 +1,15 @@
 # Changelog
 
+## v5.4.2 - 2026-07-29
+
+- Added desktop Safari website-notification setup for saved Mac and Windows device profiles.
+- Improved notification-click routing so same-device tasks open directly while cross-device tasks ask before switching through the existing device switcher.
+- Replaced the full-screen cross-device prompt with a compact Liquid Glass notice below the top capsule.
+- Increased the seven-day trial traffic allowance to 7 GiB.
+- Added clear Max lifetime membership purchase and two-group QQ support guidance to the macOS and Windows control panels.
+- Fixed Windows non-interactive SYSTEM launches from taking ownership of the signed-in user's GPT Mini state or backend.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
 ## v5.4.1 - 2026-07-26
 
 - Improved Windows control-panel startup responsiveness by rendering the first screen before serial low-priority service and status work begins.

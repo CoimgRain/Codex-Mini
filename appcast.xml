@@ -6,10 +6,10 @@
     <description>GPT Mini 官方更新源</description>
     <language>zh-CN</language>
     <item>
-      <title>GPT Mini v5.4.0</title>
-      <sparkle:releaseNotesLink>https://github.com/CoimgRain/Codex-Mini/releases/tag/codex-mini-v5.4.0</sparkle:releaseNotesLink>
-      <pubDate>Sun, 26 Jul 2026 04:05:51 +0000</pubDate>
-      <enclosure url="https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.4.0/GPTMini_v5.4.0_macOS_AppleSilicon.dmg" length="47864675" type="application/octet-stream" sparkle:version="540" sparkle:shortVersionString="5.4.0" sparkle:edSignature="RditY/SJaEI5UjAktT9gToVHeAUYGGiUGPG5Jcm6QWWXb9OiVCTuYZ1ardZlKxD74G2pcsMWBsn+yji7oNLWBQ==" />
+      <title>GPT Mini v5.4.2</title>
+      <sparkle:releaseNotesLink>https://github.com/CoimgRain/Codex-Mini/releases/tag/codex-mini-v5.4.2</sparkle:releaseNotesLink>
+      <pubDate>Wed, 29 Jul 2026 07:46:35 +0000</pubDate>
+      <enclosure url="https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.4.2/GPTMini_v5.4.2_macOS_AppleSilicon.dmg" length="47864678" type="application/octet-stream" sparkle:version="542" sparkle:shortVersionString="5.4.2" sparkle:edSignature="lYG+X28FjX2tTvlbhn0l9an5WW1SkN5xcsxcxTAAg9ev2o8pk1EDuKRIWy2Z5IWOhM0ruq2VNb4hYZ8oN+ANAw==" />
     </item>
   </channel>
 </rss>
