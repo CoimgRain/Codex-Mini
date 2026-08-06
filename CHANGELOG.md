@@ -1,5 +1,18 @@
 # Changelog
 
+## v5.5.0 - 2026-08-06
+
+- Added an animated right-side quick-action control with configurable visibility and spacing that adapts to the number of actions.
+- Added independent collapse controls for pinned, project, SSH, and conversation task sections while keeping SSH tasks visible when projects are collapsed.
+- Added web and discounted WeChat payment choices, Pro pricing, Max lifetime membership guidance, and per-device notification controls.
+- Unified the macOS and Windows control-panel layout, typography, icons, status capsules, connection flow, and membership presentation without changing platform-specific startup behavior.
+- Improved plan progress capsules, queued-message stacking, long-running duration formatting, image previews, and DeepSeek V4/V4-Pro model labels.
+- Improved project task creation so project, branch, and Worktree choices remain aligned and the new task stays selected.
+- Fixed brief replay of the previous completed reply after sending a new instruction, temporary mobile image expiry, and SSH sections disappearing after project collapse.
+- Removed custom clipboard polling that interfered with native paste/read menus on iPhone, iPad, and Safari.
+- Fixed Windows membership expansion, text overlap, payment alignment, and related control-panel spacing issues.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
 ## v5.4.2 - 2026-07-29
 
 - Added desktop Safari website-notification setup for saved Mac and Windows device profiles.
