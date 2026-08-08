@@ -1,5 +1,17 @@
 # Changelog
 
+## v5.5.2 - 2026-08-08
+
+- Added forced task-list and conversation refresh after opening a task from a message notification.
+- Restored fast-mode state reading and switching after the 5.5.1 frontend regression.
+- Restored clipboard image paste into the attachment queue while preserving accompanying text.
+- Improved queued-message detection and live synchronization for the updated GPT / Codex interface.
+- Extended hour-and-minute duration formatting to running, completed, failed, and stopped tasks.
+- Added atomic membership-state writes and local backup recovery to reduce entitlement loss during upgrades.
+- Fixed Windows controlled-GPT relaunch after the GPT client had been closed.
+- Fixed Windows Max membership upgrade recovery and several control-panel clipping issues.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
 ## v5.5.1 - 2026-08-06
 
 - Reissued the fully validated macOS, Windows, and Android release under the correct GPT Mini v5.5.1 formal version.

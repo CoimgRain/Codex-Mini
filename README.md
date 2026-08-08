@@ -23,29 +23,29 @@ GPT Mini 是一个把手机浏览器连接到电脑 ChatGPT 中 Codex 的轻量�
 
 ## 当前发布版本
 
-- 版本：v5.5.1（macOS 与 Windows 已对齐）；Android v2.0.3
-- 🍎 macOS · Apple 芯片（M1/M2/M3/M4…）：[GPT Mini v5.5.1（Apple Silicon 版）](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.5.1/GPTMini_v5.5.1_macOS_AppleSilicon.dmg)
-- 💻 macOS · Intel 芯片（x86）：[GPT Mini v5.5.1（Intel Mac 版）](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.5.1/GPTMini_v5.5.1_macOS_Intel.dmg)
-- 🪟 Windows（10 / 11，64 位）：[GPT Mini v5.5.1（Windows 版）](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.5.1/GPTMini_v5.5.1_Windows_Setup.exe)
-- 🤖 **Android 手机专用**：[GPT Mini Android v2.0.3（通用 WebView 版）](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.5.1/GPTMini_Android_v2.0.3.apk)
+- 版本：v5.5.2（macOS 与 Windows 已对齐）；Android v2.0.3
+- 🍎 macOS · Apple 芯片（M1/M2/M3/M4…）：[GPT Mini v5.5.2（Apple Silicon 版）](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.5.2/GPTMini_v5.5.2_macOS_AppleSilicon.dmg)
+- 💻 macOS · Intel 芯片（x86）：[GPT Mini v5.5.2（Intel Mac 版）](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.5.2/GPTMini_v5.5.2_macOS_Intel.dmg)
+- 🪟 Windows（10 / 11，64 位）：[GPT Mini v5.5.2（Windows 版）](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.5.2/GPTMini_v5.5.2_Windows_Setup.exe)
+- 🤖 **Android 手机专用**：[GPT Mini Android v2.0.3（通用 WebView 版）](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.5.2/GPTMini_Android_v2.0.3.apk)
 - 图文安装说明：[macOS 版（PDF）](docs/Codex%20Mini%20Mac%20%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.pdf) ｜ [Windows 版（PDF）](docs/Codex%20Mini%20Windows%20%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.pdf)
-- Release 页面：[codex-mini-v5.5.1](https://github.com/CoimgRain/Codex-Mini/releases/tag/codex-mini-v5.5.1)
+- Release 页面：[codex-mini-v5.5.2](https://github.com/CoimgRain/Codex-Mini/releases/tag/codex-mini-v5.5.2)
 - 安装方式：macOS 打开 DMG 并把 `GPT Mini.app` 拖进 `Applications`；Windows 双击 EXE 安装（无需管理员权限、无需自己安装 Node）；Android 下载 APK 后按系统提示安装
 
 > ⚠️ **5.3.0 外网入口已从 HTTP 升级为 HTTPS**
 >
 > 升级电脑端后，请重新扫描二维码或重新复制完整网址。iPhone / iPad 上旧的主屏幕 Web App 建议删除后，用新的 HTTPS 网址重新添加；也可以把旧网址开头的 `http://` 手动改为 `https://`。后续 HTTP 入口可能逐步停用，继续使用旧地址可能无法连接。
 
-### 最新版 V5.5.1（Mac / Windows）
+### 最新版 V5.5.2（Mac / Windows）
 
-- **快捷操作更顺手**：快捷按钮移到输入区右侧，与发送按钮对齐，支持动画展开、收回和开关设置
-- **线程列表更整洁**：置顶、项目、SSH 和对话分区可以独立折叠，项目收起后 SSH 仍正常显示
-- **控制面板全面统一**：Mac 与 Windows 的布局、字体、图标、状态、连接链路和会员权益区域完成视觉校准
-- **微信支付与 Max 会员**：新增网页支付/微信支付双入口、九折标记、Pro 套餐和 Max 永久会员说明
-- **任务状态更清晰**：计划胶囊、排队折叠、长任务小时显示和图片预览进一步优化
-- **新建任务更可靠**：修复项目、分支和 Worktree 选择不一致，以及新任务落到错误任务的问题
-- **回复显示更稳定**：修复新指令短暂重播上一轮回复、临时图片失效和 SSH 分区消失
-- **浏览器粘贴更自然**：移除会干扰 iPhone、iPad 和 Safari 系统菜单的自定义剪贴板读取
+- **通知打开即是最新内容**：点击消息通知进入对应任务后，任务列表和对话会立即强制刷新
+- **快速模式恢复正常**：修复 5.5.1 升级后快速模式状态读取、显示和切换异常
+- **图片粘贴恢复正常**：从剪贴板粘贴图片可直接进入附件队列，图文同时粘贴会保留文字
+- **待排队持续同步**：适配新版 GPT / Codex 界面，运行中也会持续刷新待排队消息
+- **长任务时间更清晰**：超过 60 分钟后，运行中、完成、失败和停止状态都显示“小时＋分钟”
+- **会员升级更稳健**：增加会员状态原子写入与备份恢复，降低覆盖升级后授权丢失概率
+- **Windows 受控启动修复**：退出 GPT 后再次点击“启用受控 GPT”可正常重新启动
+- **Windows 面板细节修复**：修复说明文字遮挡、状态胶囊裁切等显示问题
 - **Android 安装包**：继续提供独立 Android 仓库 v2.0.3 通用 WebView 安装包，体积约 5.2 MB
 
 ### GPT Mini V5 重大更新总览
