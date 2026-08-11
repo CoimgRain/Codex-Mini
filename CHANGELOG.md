@@ -1,5 +1,16 @@
 # Changelog
 
+## v5.5.3 - 2026-08-11
+
+- Made server membership records authoritative when restoring and displaying entitlements on macOS and Windows.
+- Unified task-list and conversation refresh behavior for page open, foreground resume, notifications, and task-state changes.
+- Adjusted the top status-capsule safe area for the latest system blur treatment.
+- Fixed first-message routing after creating normal and project tasks so messages stay in the new task.
+- Fixed completed-task unread dots not appearing or not clearing after the task was viewed.
+- Fixed failed tasks occasionally being reported as completed.
+- Fixed rename, archive, approval-card, and archive-confirmation actions against the latest GPT interface.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
 ## v5.5.2 - 2026-08-08
 
 - Added forced task-list and conversation refresh after opening a task from a message notification.
