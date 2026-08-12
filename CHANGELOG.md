@@ -1,5 +1,12 @@
 # Changelog
 
+## v5.5.4 - 2026-08-12
+
+- Fixed completed-task unread dots remaining visible after the task was opened by adding an explicit read acknowledgement and immediate list refresh.
+- Improved terminal-state classification so failed tasks, incomplete responses, and approval-card outcomes are less likely to be reported as completed.
+- Preserved the 5.5.3 new-task routing, rename, archive, membership-authority, and unified refresh fixes across macOS and Windows.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
 ## v5.5.3 - 2026-08-11
 
 - Made server membership records authoritative when restoring and displaying entitlements on macOS and Windows.
