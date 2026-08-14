@@ -8,8 +8,8 @@
     <item>
       <title>GPT Mini v5.5.4</title>
       <sparkle:releaseNotesLink>https://github.com/CoimgRain/Codex-Mini/releases/tag/codex-mini-v5.5.4</sparkle:releaseNotesLink>
-      <pubDate>Wed, 12 Aug 2026 15:00:53 +0000</pubDate>
-      <enclosure url="https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.5.4/GPTMini_v5.5.4_macOS_Intel.dmg" length="50492884" type="application/octet-stream" sparkle:version="554" sparkle:shortVersionString="5.5.4" sparkle:edSignature="ESxc2NL5hlM53M0SQnMJ8i2PTxwd5fx00705EzqUIEeXcXq3LSEiAal5ap2bixE07F+0ZK5gOC6F+L4kQZ/1AQ==" />
+      <pubDate>Fri, 14 Aug 2026 11:57:39 +0000</pubDate>
+      <enclosure url="https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.5.4/GPTMini_v5.5.4_macOS_Intel.dmg" length="50498312" type="application/octet-stream" sparkle:version="554" sparkle:shortVersionString="5.5.4" sparkle:edSignature="3GugV5XofqGyO+r6sHW0dUSdsEx5FjSESCDbI4g8b2ikQll5QGN/oNCp4iWP4d7Sgxuc0gGu0lVu8DuzJoJFAw==" />
     </item>
   </channel>
 </rss>

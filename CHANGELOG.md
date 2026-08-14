@@ -1,11 +1,17 @@
 # Changelog
 
-## v5.5.4 - 2026-08-12
+## v5.5.4 - 2026-08-14
 
-- Fixed completed-task unread dots remaining visible after the task was opened by adding an explicit read acknowledgement and immediate list refresh.
-- Improved terminal-state classification so failed tasks, incomplete responses, and approval-card outcomes are less likely to be reported as completed.
-- Preserved the 5.5.3 new-task routing, rename, archive, membership-authority, and unified refresh fixes across macOS and Windows.
-- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+- Added official DeepSeek wallet-balance rings with configurable amount ceilings and OpenCode Go 5-hour, weekly, and monthly quota rings that appear only for the detected provider.
+- Remembered the selected DeepSeek balance ring, display state, and amount ceiling while refreshing provider usage every 30 seconds.
+- Removed individual text, attachment, image, and video limits while retaining the membership plan's total monthly traffic quota.
+- Stopped webpage refresh and background synchronization from repeatedly taking ownership of the task currently selected on the desktop.
+- Fixed repeated DeepSeek balance-ring rendering that could freeze the mobile interface after a few swipes.
+- Fixed newly created tasks being reclaimed by the previous task, switching away automatically, or receiving the first message in the wrong task.
+- Improved cross-task send confirmation and terminal-state classification so failed or incomplete work is not reported as successfully completed.
+- Fixed completed-task unread dots remaining visible after the task was opened.
+- Published refreshed Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
 
 ## v5.5.3 - 2026-08-11
 
