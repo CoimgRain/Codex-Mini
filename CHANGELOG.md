@@ -1,5 +1,12 @@
 # Changelog
 
+## v5.5.5 - 2026-08-20
+
+- Improved attachment preview stability across thread refreshes and task switching.
+- Fixed thread action labels and made the latest conversation section expand/collapse reliably.
+- Fixed false “instruction received” and CDP-failure reports during normal thread read acknowledgements.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
 ## v5.5.4 - 2026-08-14
 
 - Added official DeepSeek wallet-balance rings with configurable amount ceilings and OpenCode Go 5-hour, weekly, and monthly quota rings that appear only for the detected provider.
