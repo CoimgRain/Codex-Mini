@@ -1,5 +1,16 @@
 # Changelog
 
+## v5.6.0 - 2026-08-27
+
+- Added official queue-based follow-up sending: messages sent while a task is running now line up in GPT's native queue and stay visible on the desktop app.
+- Switched thread switching and thread deep links to the official thread routing path and retired simulated menu clicks.
+- Migrated model, reasoning effort, archive, rename, compact, speed mode, and permission mode controls to direct official API calls for more reliable results.
+- Stopping an active reply now uses the official interrupt channel first, with an automatic fallback.
+- Fixed Windows not responding to thread deep links opened from notifications or external apps by adding a dedicated Windows-specific routing path.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
+
+
 ## v5.5.5 - 2026-08-20
 
 - Improved attachment preview stability across thread refreshes and task switching.
