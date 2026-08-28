@@ -1,5 +1,13 @@
 # Changelog
 
+## v5.6.1 - 2026-08-28
+
+- Fixed Windows reasoning summaries and tool-call progress not appearing after a reply.
+- Fixed Windows user messages disappearing after refreshing the webpage or reopening the app.
+- Temporarily hid the WeChat payment method 2 entry on both macOS and Windows while retaining the implementation for later restoration.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
+
 ## v5.6.0 - 2026-08-27
 
 - Added official queue-based follow-up sending: messages sent while a task is running now line up in GPT's native queue and stay visible on the desktop app.
