@@ -1,5 +1,12 @@
 # Changelog
 
+
+## v5.6.2 - 2026-09-01
+
+- Added a Max lifetime (永久) Pro membership tier with a `$16 ≈ ¥114` in-app purchase entry and activation via iDataRiver authorization code.
+- Wired the iDataRiver in-app purchase URLs for Pro monthly/quarterly/annual and Max lifetime, and refined the plan button typography and vertical alignment so the title and price are centered.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
 ## v5.6.1 - 2026-08-28
 
 - Fixed Windows reasoning summaries and tool-call progress not appearing after a reply.
