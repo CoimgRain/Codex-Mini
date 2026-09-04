@@ -1,6 +1,12 @@
 # Changelog
 
 
+## v5.6.3 - 2026-09-04
+
+- Fixed the phone task list not following the desktop GPT sidebar when the phone connects to the computer over the LAN peer-to-peer transport.
+- Fixed Windows process detection missing ChatGPT/Codex clients installed at non-default locations or renamed builds, which made GPT Mini fail to take over and mobile sends fail with CDP control errors.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
 ## v5.6.2 - 2026-09-01
 
 - Added a Max lifetime (永久) Pro membership tier with a `$16 ≈ ¥114` in-app purchase entry and activation via iDataRiver authorization code.
