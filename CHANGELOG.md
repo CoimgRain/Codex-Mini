@@ -1,6 +1,13 @@
 # Changelog
 
 
+## v5.6.4 - 2026-09-05
+
+- Restored live streaming of reasoning summaries and reply text on the phone after a desktop GPT app update broke the old preview pipeline; streaming now reads the official desktop app-server bridge token-by-token.
+- Fixed a duplicated full reply briefly flashing after streaming finished; the streamed reply is now finalized in place without re-rendering.
+- The official bridge now rebuilds itself automatically after a timeout instead of failing the send.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
 ## v5.6.3 - 2026-09-04
 
 - Fixed the phone task list not following the desktop GPT sidebar when the phone connects to the computer over the LAN peer-to-peer transport.
