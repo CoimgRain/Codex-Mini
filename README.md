@@ -26,7 +26,7 @@ GPT Mini 是一个把手机浏览器连接到电脑 ChatGPT 中 Codex 的轻量�
 - 版本：v5.7.0（macOS 与 Windows 已对齐）；Android v2.0.3
 - 🍎 macOS · Apple 芯片（M1/M2/M3/M4…）：[GPT Mini v5.7.0（Apple Silicon 版）](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.7.0/GPTMini_v5.7.0_macOS_AppleSilicon.dmg)
 - 💻 macOS · Intel 芯片（x86）：[GPT Mini v5.7.0（Intel Mac 版）](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.7.0/GPTMini_v5.7.0_macOS_Intel.dmg)
-- 🪟 Windows（10 / 11，64 位）：[GPT Mini v5.7.0（Windows 版）](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.7.0/GPTMini_v5.7.0_Windows_Setup.exe)
+- 🪟 Windows（10 / 11，64 位）：[GPT Mini v5.7.0（替换包）（Windows 版）](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.7.0/GPTMini_v5.7.0_Windows_Setup.exe)
 - 🤖 **Android 手机专用**：[GPT Mini Android v2.0.3（通用 WebView 版）](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.7.0/GPTMini_Android_v2.0.3.apk)
 - 图文安装说明：[macOS 版（PDF）](docs/Codex%20Mini%20Mac%20%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.pdf) ｜ [Windows 版（PDF）](docs/Codex%20Mini%20Windows%20%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.pdf)
 - Release 页面：[codex-mini-v5.7.0](https://github.com/CoimgRain/Codex-Mini/releases/tag/codex-mini-v5.7.0)
