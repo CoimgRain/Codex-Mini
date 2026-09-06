@@ -1,5 +1,13 @@
 # Changelog
 
+## v5.7.0 - 2026-09-06
+
+- Fixed new capsules being inserted at the right edge; newly created capsules now start at the left and subsequent capsules follow in order.
+- Optimized attachment sending with batched materialization, in-flight byte backpressure, and immediate release of Base64, preview, and source-file references after send.
+- Coalesced short-burst state writes while preserving write ordering, reducing disk writes and state-lock contention.
+- Hardened packaged runtimes to exclude `.mimosa` session state and internal metadata from application payloads.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
 
 ## v5.6.4 - 2026-09-05
 
