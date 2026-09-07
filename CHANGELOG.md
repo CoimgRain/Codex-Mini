@@ -1,5 +1,14 @@
 # Changelog
 
+## v5.7.1 - 2026-09-08
+
+- Added scroll-up pagination to the mobile thread view, so older messages in long conversations can be loaded continuously instead of stopping at the first screen.
+- Optimized long-conversation history paging: loading older messages now prepends only the new page instead of rebuilding the whole window, with prefetching as you approach the top.
+- Optimized thread switching so the desktop GPT app stays in the background instead of repeatedly jumping to the foreground.
+- Fixed archived conversations occasionally remaining in the list due to a missing archive confirmation receipt.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
+
 ## v5.7.0 - 2026-09-06
 
 - Fixed new capsules being inserted at the right edge; newly created capsules now start at the left and subsequent capsules follow in order.
