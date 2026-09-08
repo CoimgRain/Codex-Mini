@@ -1,5 +1,17 @@
 # Changelog
 
+## v5.7.2 - 2026-09-09
+
+- Added a stats strip under the mobile composer showing output speed, cache hit rate, and input/output token usage with a settings toggle.
+- Added level sliders for the top-bar capsule height and vertical offset in mobile settings.
+- Stabilized history paging while a thread is running: pagination is anchored to the first-load snapshot so pages no longer drift into overlaps or gaps.
+- Fixed a new thread's first message occasionally not being adopted, leaving model menus unselected.
+- Fixed the same user message appearing twice in long conversation history when it was recorded in both event formats.
+- Fixed duplicate messages rendered at page boundaries when scrolling up through history.
+- Fixed model, reasoning, and speed mode switching pulling the desktop GPT app to the foreground.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
+
 ## v5.7.1 - 2026-09-08
 
 - Added scroll-up pagination to the mobile thread view, so older messages in long conversations can be loaded continuously instead of stopping at the first screen.
