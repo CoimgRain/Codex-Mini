@@ -1,5 +1,15 @@
 # Changelog
 
+## v5.7.3 - 2026-09-09
+
+- Added an account details card on mobile web showing account email, plan, expiry date, and 5-hour/weekly quota bars; the bottom capsule now has a three-segment layout with account details, expiry, and official recharge entries.
+- Exposed account email and expiry data from desktop backends to power the web account details view.
+- Polished the mobile bottom capsule, account details card, and recharge card with cascading open animations, outside-tap dismissal protection, and a dedicated glass close button.
+- Fixed the intermittent "clear project button not found" error when creating a new thread on Windows by adding text-match and project-menu fallbacks with on-screen diagnostics.
+- Fixed a leftover legacy function call in the above fallback flow that could throw at runtime.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
+
 ## v5.7.2 - 2026-09-09
 
 - Added a stats strip under the mobile composer showing output speed, cache hit rate, and input/output token usage with a settings toggle.
