@@ -1,5 +1,15 @@
 # Changelog
 
+## v5.7.4 - 2026-09-16
+
+- Account expiry now reads the official subscription end date from the local login credentials instead of a manually entered value, and follows official refreshes automatically.
+- Folded the Windows token-binding conflict self-heal (state hash history, 409 rollback recomputation, conflict exposure in health) into the shared baseline.
+- Fixed the mobile slash-command menu text being cut off after a desktop description class change prevented title/description splitting.
+- Fixed the top-bar model/reasoning capsules being blown out by long relay-provided strings; the server no longer forwards multi-tier strings as model names and capsules truncate safely.
+- Fixed GPT-6 Astra showing as "6-Astra", garbled top-bar text, and unconfirmed switches by adapting to the new desktop footer text format.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
+
 ## v5.7.3 - 2026-09-09
 
 - Added an account details card on mobile web showing account email, plan, expiry date, and 5-hour/weekly quota bars; the bottom capsule now has a three-segment layout with account details, expiry, and official recharge entries.
