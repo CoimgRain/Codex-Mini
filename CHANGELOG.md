@@ -1,5 +1,14 @@
 # Changelog
 
+## v5.7.5 - 2026-09-17
+
+- Fixed intermittent "CDP Runtime.evaluate timeout" when creating a new thread by budgeting each lookup/confirmation step separately with diagnostic context.
+- Fixed a failed anchor-thread switch blocking project-scoped new-thread creation; anchor failures no longer abort the flow.
+- Fixed the mobile history view getting stuck prompting "scroll up again" when the local window page was empty: it now reloads the latest page automatically.
+- Added a payload guard to the Mac build: the build fails if non-runtime directories (e.g. the iOS project) leak into the app payload or the payload exceeds the size limit.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
+
 ## v5.7.4 - 2026-09-16
 
 - Account expiry now reads the official subscription end date from the local login credentials instead of a manually entered value, and follows official refreshes automatically.
