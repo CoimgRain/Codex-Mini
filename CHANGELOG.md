@@ -1,5 +1,13 @@
 # Changelog
 
+## v5.7.6 - 2026-09-19
+
+- Added "Method 2: Alipay" payment entry to the membership panel with a blue QR-payment button (Pro monthly 6 / quarterly 13 / yearly 49 CNY, Max lifetime 99 CNY, with a discount badge) and a three-point confirmation before showing the payment QR poster.
+- Added the Alipay payment listener agent and dual-channel order cards in the operations dashboard.
+- Fixed the web-payment title clashing with the button color; the title is now gold.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
+
 ## v5.7.5 - 2026-09-17
 
 - Fixed intermittent "CDP Runtime.evaluate timeout" when creating a new thread by budgeting each lookup/confirmation step separately with diagnostic context.
