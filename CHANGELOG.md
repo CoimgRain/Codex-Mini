@@ -1,5 +1,14 @@
 # Changelog
 
+## v5.8.0 - 2026-09-25
+
+- Added GLM Coding Plan usage to the quota panel: remaining quota and expiry display for third-party model usage.
+- Added background Live-Activity-style process reminders: progress stays visible while tasks run in the background.
+- Locked the Mac build minimum system version to macOS 13.0 on both architectures so overlay installs no longer fail to launch.
+- Hardened third-party model commentary display: no longer overwritten by internal reasoning, preserved across history refresh, no cross-talk between rounds.
+- Fixed controlled-GPT being killed and restarted on new launch events.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
 ## v5.7.6 - 2026-09-19
 
 - Added "Method 2: Alipay" payment entry to the membership panel with a blue QR-payment button (Pro monthly 6 / quarterly 13 / yearly 49 CNY, Max lifetime 99 CNY, with a discount badge) and a three-point confirmation before showing the payment QR poster.
