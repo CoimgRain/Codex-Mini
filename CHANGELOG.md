@@ -1,5 +1,16 @@
 # Changelog
 
+## v5.8.1 - 2026-09-26
+
+- Added OpenCode Go quota support to the quota panel: three tiers plus expiry, resolved by provider key ownership.
+- Added provider brand badges to the model menu so the active model is recognizable at a glance.
+- Composer stats now report decoding speed and cache-hit rate per latest round, so switching models no longer dilutes the numbers.
+- The Mini capsule now follows the redesigned Codex title button and hides together with the sidebar.
+- Extended the Live-Activity completion dwell time to 60 seconds and made background progress reminders silent.
+- Fixed the newest reply being rendered twice: history merge matches the body with memory-quote blocks stripped and replaces the streaming node.
+- Fixed duplicated commentary on the A1 page and double-counted OpenCode Go fallback rows.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
 ## v5.8.0 - 2026-09-25
 
 - Added GLM Coding Plan usage to the quota panel: remaining quota and expiry display for third-party model usage.
