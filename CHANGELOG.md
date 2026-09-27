@@ -1,5 +1,12 @@
 # Changelog
 
+## v5.8.4 - 2026-09-28
+
+- Desktop installs now default to the hosted push gateway: completion notifications and Live-Activity updates work without any per-machine key or configuration file.
+- Fixed phones losing Live-Activity refreshes in the background when connected to a computer that had no push configuration.
+- Self-hosted deployments that provide their own APNs key keep using the local direct path, and the gateway can be disabled explicitly.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
 ## v5.8.3 - 2026-09-27
 
 - Centralized Apple push delivery: completion notifications and Live-Activity updates for macOS and Windows now go through the hosted relay, so the APNs signing key is no longer distributed to user machines.
