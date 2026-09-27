@@ -1,5 +1,12 @@
 # Changelog
 
+## v5.8.3 - 2026-09-27
+
+- Centralized Apple push delivery: completion notifications and Live-Activity updates for macOS and Windows now go through the hosted relay, so the APNs signing key is no longer distributed to user machines.
+- Windows builds now support the same background completion notifications and Live-Activity updates as macOS.
+- Push delivery automatically falls back between APNs sandbox and production environments per device token.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
 ## v5.8.2 - 2026-09-27
 
 - Long threads open faster: status and chat history are now fetched in one request (556ms to 367ms; a cold 92MB thread went 1414ms to 601ms through the hosted entry).
