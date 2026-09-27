@@ -1,5 +1,18 @@
 # Changelog
 
+## v5.8.2 - 2026-09-27
+
+- Long threads open faster: status and chat history are now fetched in one request (556ms to 367ms; a cold 92MB thread went 1414ms to 601ms through the hosted entry).
+- Idle refresh is much cheaper: unchanged sessions skip re-parsing entirely (326ms to 1.7ms desktop-side, 34KB to 0.2KB transferred).
+- Large threads read faster: only the needed tail window is parsed (91MB thread 236ms to 100ms).
+- Bubble images now load as thumbnails (5.70MB to 242KB, about 23x less data); opening full size still serves the original, and thumbnails are cached locally.
+- History images load as they enter the viewport (at most two at a time) and scrolling up prefetches the previous page, so browsing long threads feels instant.
+- The hosted test page revalidates with ETag/304, so cold reloads no longer re-download about 240KB.
+- Added a per-request timing overlay (`&perf=1`) on the phone page.
+- Fixed attachments evicted by iCloud stalling about six seconds and then failing; they now return a clear message in 0.4 seconds.
+- Improved hosted relay behavior on mobile networks: request priority keeps status polling ahead of large media downloads.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
 ## v5.8.1 - 2026-09-26
 
 - Added OpenCode Go quota support to the quota panel: three tiers plus expiry, resolved by provider key ownership.
