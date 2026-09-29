@@ -1,5 +1,12 @@
 # Changelog
 
+## v5.8.5 - 2026-09-29
+
+- Fixed Windows backends that could stop saving their local state after the first write: saved device connections, pinned or archived threads, appearance and notification settings could be lost again after a restart.
+- Fixed the phone-side multi-device list being wiped when a Windows computer is the main device, which forced users to re-add every computer.
+- Fixed 7-day trial and license-code activation on Windows binding to a device identity that was never persisted, which made activation appear to fail or come back unactivated after a restart.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
 ## v5.8.4 - 2026-09-28
 
 - Desktop installs now default to the hosted push gateway: completion notifications and Live-Activity updates work without any per-machine key or configuration file.
