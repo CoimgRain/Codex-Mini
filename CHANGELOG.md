@@ -1,5 +1,14 @@
 # Changelog
 
+## v5.8.6 - 2026-10-08
+
+- Fixed the false "creation failed" message when starting a new task: GPT Mini now only reports a failure when the task really was not created, and the phone page no longer asks you to retry something that already succeeded.
+- Fixed the model capsule staying empty right after a new blank task was created; the current model and reasoning level now resolve immediately.
+- Fixed the model menu collapsing to the single active model when `model_catalog_json` used a relative path: relative catalog paths now resolve against `~/.codex/` (or `CODEX_HOME`) instead of the process working directory.
+- The task-list section refresh is much faster: a forced refresh only invalidates aggregate caches instead of re-reading every session file (about 3s down to 0.05-0.2s locally, about 0.5s through the hosted entry).
+- Added relay wallet balance on the phone page: when the active model belongs to a TApi / AccSite relay, the top ring shows the wallet balance as an integer and the panel only shows that wallet balance instead of official hourly/weekly quotas.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
 ## v5.8.5 - 2026-09-29
 
 - Fixed Windows backends that could stop saving their local state after the first write: saved device connections, pinned or archived threads, appearance and notification settings could be lost again after a restart.
