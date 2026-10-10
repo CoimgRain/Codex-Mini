@@ -1,5 +1,12 @@
 # Changelog
 
+## v5.8.7 - 2026-10-10
+
+- Fixed desktop sends that could hang on the loading spinner: GPT Mini's background work against the official Codex window was cut back (title-status polling dropped from 900ms to 2s, and a broken bridge reuse check no longer rebuilds by re-walking the whole interface tree on every request).
+- The controlled Codex launch no longer forces native window occlusion detection off, so Codex stops repainting at full speed while it is covered by other windows.
+- Fixed the new-chat entry not being detected on current desktop builds where it is labelled "新聊天" (new chat).
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
 ## v5.8.6 - 2026-10-08
 
 - Fixed the false "creation failed" message when starting a new task: GPT Mini now only reports a failure when the task really was not created, and the phone page no longer asks you to retry something that already succeeded.
