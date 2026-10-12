@@ -1,5 +1,12 @@
 # Changelog
 
+## v5.8.8 - 2026-10-12
+
+- Redesigned the membership panel payment area: a single row of frosted-glass capsules (membership purchase, benefits comparison, WeChat/Alipay support, Pro monthly/quarterly/yearly, Max lifetime) on a live pixel-glow background with a cursor-following highlight.
+- Added a Pro/Max benefits comparison dialog: 14 benefit rows, per-tier relay quota breakdown, "?" hover/tap explanations, and a direct purchase entry.
+- Fixed desktop sends that could wait for a long time (spinner) after GPT Mini's guided setup: residual idle schedulers are cleaned up and the send path is aligned with the native queue coordinator.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
 ## v5.8.7 - 2026-10-10
 
 - Fixed desktop sends that could hang on the loading spinner: GPT Mini's background work against the official Codex window was cut back (title-status polling dropped from 900ms to 2s, and a broken bridge reuse check no longer rebuilds by re-walking the whole interface tree on every request).
