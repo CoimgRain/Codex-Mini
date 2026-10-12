@@ -1,5 +1,11 @@
 # Changelog
 
+## v5.8.9 - 2026-10-12
+
+- Added a "7-day trial" capsule to the membership purchase row in the control panel: click it to start the free 7-day Pro trial; it shows "already active" once a membership is on.
+- Fixed the membership header showing "Pro membership" on a fresh, unactivated install: it now shows a grey "Regular member" until a membership is activated.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
 ## v5.8.8 - 2026-10-12
 
 - Redesigned the membership panel payment area: a single row of frosted-glass capsules (membership purchase, benefits comparison, WeChat/Alipay support, Pro monthly/quarterly/yearly, Max lifetime) on a live pixel-glow background with a cursor-following highlight.
