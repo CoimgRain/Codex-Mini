@@ -1,5 +1,16 @@
 # Changelog
 
+## v5.9.0 - 2026-10-15
+
+- Membership codes now stack: redeeming a code on a device with an active membership extends the existing expiry date and keeps the higher tier (an annual member redeeming a monthly card gets +30 days; any tier redeeming a Max code upgrades to lifetime right away).
+- Added an activation success dialog: activating, renewing, or upgrading shows an animated result card with the product and expiry date; Max lifetime uses a gold theme.
+- Redeeming a code on a device that is already Max now reports that the code was not consumed, so it can be used on another device; transient license-server connection hiccups are retried once automatically.
+- Phone web page: the attachment preview is now a centered glass dialog card with return/download at the bottom, and attachment downloads show a progress bar with percentage; chat attachment row icons now match the preview dialog's colored document icons.
+- Fixed a false project-picker overlay (which could also steal keyboard focus) when creating a new regular conversation on current desktop builds.
+- Fixed a risk of double-stacking when the same license code was submitted twice.
+- Windows control panel: activation results now show the server details (days added, new expiry date), and the crown icon in the Max gold dialog is properly centered.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
 ## v5.8.9 - 2026-10-12
 
 - Added a "7-day trial" capsule to the membership purchase row in the control panel: click it to start the free 7-day Pro trial; it shows "already active" once a membership is on.
