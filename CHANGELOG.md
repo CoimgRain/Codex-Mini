@@ -1,5 +1,14 @@
 # Changelog
 
+## v5.9.1 - 2026-10-16
+
+- Added a surprise-code redemption celebration dialog with a gift-purple theme (gift-box badge, purple confetti, shimmer); stacked time shows a "+N days" badge and Max traffic upgrades show a "100GB/month" badge.
+- Fixed a bug on current desktop builds where a disabled send button (for example while a brand-new task's workspace is still loading) could accidentally hit the dictation button; it now clearly reports "send button unavailable, try again later".
+- Fixed a leftover "/" and command menu in the composer after switching models in a blank new conversation: every switch now force-clears the input box and closes the command menu, on both success and failure.
+- Fixed switching the reasoning level to the top tier always failing on current desktop builds (the menu shows it as "Max").
+- Unified the Max relay-traffic display to 80GB/month across the control panel and the web pages.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
 ## v5.9.0 - 2026-10-15
 
 - Membership codes now stack: redeeming a code on a device with an active membership extends the existing expiry date and keeps the higher tier (an annual member redeeming a monthly card gets +30 days; any tier redeeming a Max code upgrades to lifetime right away).
