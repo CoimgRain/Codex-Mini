@@ -1,5 +1,13 @@
 # Changelog
 
+## v5.9.2 - 2026-10-20
+
+- Added in-app referral rebates: the membership card now has a “推广好礼” entry that opens your own surprise code. When a friend activates a paid plan with it you earn 5% of the order amount and the same extra days they get (monthly +6, quarterly +18, annual +73; a lifetime purchase gives you +90 days).
+- Added a referral panel: your own code, one-tap copy of the code or a ready-made invite text, referred heads, total / paid / available rebate, bonus days, and a per-order breakdown. Withdraw from ¥10 by contacting support on QQ.
+- The membership activation field now accepts surprise codes as well as activation codes.
+- Surprise codes must be redeemed within 24 hours of activating the membership, and a device cannot redeem its own referral code (enforced by the license server).
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
 ## v5.9.1 - 2026-10-16
 
 - Added a surprise-code redemption celebration dialog with a gift-purple theme (gift-box badge, purple confetti, shimmer); stacked time shows a "+N days" badge and Max traffic upgrades show a "100GB/month" badge.
