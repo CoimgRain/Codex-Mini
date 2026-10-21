@@ -1,5 +1,11 @@
 # Changelog
 
+## v5.9.3 - 2026-10-21
+
+- Fixed a bug where many historical tasks disappeared from the task list: newer desktop builds store older conversation records in a compressed form, and the app previously read only uncompressed ones, so whole projects could show 0 tasks. Both forms are now read transparently, restoring the list, titles, history detail, and run status.
+- Fixed the phone task list occasionally falling back to an incomplete list after a desktop update: added compatibility with the newer desktop build's CLI component location so a failed lookup no longer silently degrades the list.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
 ## v5.9.2 - 2026-10-20
 
 - Added in-app referral rebates: the membership card now has a “推广好礼” entry that opens your own surprise code. When a friend activates a paid plan with it you earn 5% of the order amount and the same extra days they get (monthly +6, quarterly +18, annual +73; a lifetime purchase gives you +90 days).
