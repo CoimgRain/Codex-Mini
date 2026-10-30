@@ -1,5 +1,21 @@
 # Changelog
 
+## v5.10.0 - 2026-10-30
+
+- Added end-to-end encryption (E2EE v1): chat messages and attachments can now travel over an encrypted channel between the phone page and the desktop. Settings shows the current state, algorithm, key fingerprint, and remaining session time. Enabling it warns about the trade-off: attachment uploads get slower and streaming text preview is turned off.
+- Added an encryption-status chip on the desktop connection row, refreshed automatically by polling. It uses the app's standard blue so it is clearly distinct from the green connection state.
+- Added support for desktop blocking questions: when the desktop app asks a question, the phone now receives it and can answer it in sync with the desktop.
+- The encryption settings detail panel now shows the algorithm, key fingerprint, and remaining session time, with the computer fingerprint moved above the notes for a clearer reading order.
+- Improved the copy shown before encryption is enabled so the trade-off is stated up front instead of being discovered afterwards.
+- Fixed model switching on desktop builds from 26.1023 onwards: the newer desktop replaced the official app-server manager with a proxy facade, which the old detection could not recognize, so the model catalog and reasoning levels failed to load and the model menu collapsed to the single current model.
+- Fixed the model chip turning grey with a long garbled name: the same desktop version changed the composer footer tiers to English, and the parser treated the whole string as a model name.
+- Fixed questions raised by the desktop being invisible on the phone and the task appearing stuck: the newer desktop made the pending-request read call asynchronous and the old code read an empty list. Also fixed the failed answer submission and a leftover question card that blocked the send button.
+- Fixed Plan / Goal mode switching always reporting failure: the newer desktop moved the mode indicator into a small label inside the composer, so switching actually succeeded but was never confirmed.
+- Fixed "clear project button not found" when starting a new conversation: the official "don't work in a project" entry was renamed to English and the matcher did not cover it.
+- Fixed the desktop still showing encryption as enabled after it was switched off.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
+
 ## v5.9.3 - 2026-10-21
 
 - Fixed a bug where many historical tasks disappeared from the task list: newer desktop builds store older conversation records in a compressed form, and the app previously read only uncompressed ones, so whole projects could show 0 tasks. Both forms are now read transparently, restoring the list, titles, history detail, and run status.
