@@ -1,5 +1,13 @@
 # Changelog
 
+## v5.10.1 - 2026-11-03
+
+- Fixed desktop questions not appearing on the phone on newer desktop builds: those builds moved to a different question mechanism that no longer keeps a pending request to read, so the old logic matched nothing and the question card never showed.
+- Fixed the question card appearing but being unselectable, with submitting reporting a send failure: answers are now submitted by clicking the same option on the desktop's question card, which submits automatically for single-choice questions. Multi-select ticks each option then presses submit; the in-card text field is only used when you type your own answer.
+- Fixed option clicks not confirming their result: every click now verifies that the card actually changed, and reports a clear failure instead of claiming success when nothing happened.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
+
 ## v5.10.0 - 2026-10-30
 
 - Added end-to-end encryption (E2EE v1): chat messages and attachments can now travel over an encrypted channel between the phone page and the desktop. Settings shows the current state, algorithm, key fingerprint, and remaining session time. Enabling it warns about the trade-off: attachment uploads get slower and streaming text preview is turned off.
