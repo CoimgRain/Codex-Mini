@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover, interactive-widget=overlays-content" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover, interactive-widget=resizes-visual" />
   <meta name="theme-color" content="#000000" />
   <meta name="application-name" content="Codex mini" />
   <meta name="apple-mobile-web-app-title" content="Codex mini" />
@@ -39,8 +39,8 @@
       --app-height: 100dvh;
       --app-top: 0px;
       --keyboard-shift: 0px;
-      --keyboard-composer-gap: 0px;
-      --keyboard-shift-trim: 15px;
+      --keyboard-composer-gap: 8px;
+      --keyboard-shift-trim: 0px;
       --keyboard-gap-bg: #0d0d0d;
       --composer-bottom-pad: max(56px, calc(env(safe-area-inset-bottom) + 30px));
       --composer-signature-gap: 15px;
@@ -1771,7 +1771,17 @@
     let keyboardAlignRaf = 0;
     let keyboardFocusStartedAt = 0;
     let keyboardShiftTarget = 0;
-    let maxViewportHeight = Math.max(window.innerHeight || 0, window.visualViewport ? window.visualViewport.height : 0);
+    function viewportBaselineSize() {
+      const viewport = window.visualViewport;
+      return {
+        width: Math.round(Math.max(window.innerWidth || 0, document.documentElement.clientWidth || 0, viewport ? viewport.width : 0)),
+        height: Math.round(Math.max(window.innerHeight || 0, document.documentElement.clientHeight || 0, viewport ? viewport.height : 0)),
+      };
+    }
+    let viewportBaseline = viewportBaselineSize();
+    let maxViewportHeight = viewportBaseline.height;
+    let viewportBaselineWidth = viewportBaseline.width;
+    let viewportBaselineHeight = viewportBaseline.height;
     let keyboardComposerRevealDone = false;
     let lastTextareaFocusPrepareAt = 0;
     let lastOutsideComposerTouchAt = 0;
@@ -2757,8 +2767,28 @@
     }
 
     function stableViewportHeight() {
+      const baseline = syncViewportBaseline();
       const viewportHeight = Math.round((window.visualViewport && window.visualViewport.height) || 0);
-      return Math.round(Math.max(maxViewportHeight, window.innerHeight || 0, document.documentElement.clientHeight || 0, viewportHeight || 0));
+      return Math.round(Math.max(maxViewportHeight, baseline.height, viewportHeight || 0));
+    }
+
+    function syncViewportBaseline(options = {}) {
+      const next = viewportBaselineSize();
+      const widthDelta = Math.abs(next.width - viewportBaselineWidth);
+      const heightDelta = Math.abs(next.height - viewportBaselineHeight);
+      const shapeChanged = widthDelta > 32 || heightDelta > 120;
+      if (options.force || shapeChanged) {
+        maxViewportHeight = next.height;
+        keyboardShiftTarget = 0;
+        document.documentElement.style.setProperty('--keyboard-shift', '0px');
+      } else if (!document.body.classList.contains('keyboard-open')) {
+        maxViewportHeight = next.height;
+      } else {
+        maxViewportHeight = Math.max(maxViewportHeight, next.height);
+      }
+      viewportBaselineWidth = next.width;
+      viewportBaselineHeight = next.height;
+      return next;
     }
 
     function pinLayoutForKeyboardFocus() {
@@ -2823,22 +2853,20 @@
     function applyViewportSize() {
       const viewport = window.visualViewport;
       const viewportHeight = Math.round((viewport && viewport.height) || window.innerHeight || document.documentElement.clientHeight || 0);
-      const baselineHeight = Math.round(Math.max(window.innerHeight || 0, document.documentElement.clientHeight || 0, viewportHeight || 0));
+      const baseline = syncViewportBaseline();
+      const baselineHeight = baseline.height;
       const focused = document.activeElement === textarea;
-      if (!focused && !document.body.classList.contains('keyboard-open')) {
-        maxViewportHeight = baselineHeight;
-      } else if (!document.body.classList.contains('keyboard-open')) {
-        maxViewportHeight = Math.max(maxViewportHeight, baselineHeight);
-      }
       const viewportShrink = viewport ? Math.max(0, maxViewportHeight - viewportHeight) : 0;
       const focusAge = focused && keyboardFocusStartedAt ? performance.now() - keyboardFocusStartedAt : Infinity;
       const previousShift = currentKeyboardShift();
-      const keyboardOpen = focused && (viewportShrink > 80 || previousShift > 0 || keyboardShiftTarget > 0 || focusAge < 900);
+      const awaitingKeyboardOpen = focusAge < 900 && viewportShrink <= 80 && previousShift <= 0 && keyboardShiftTarget <= 0;
+      const keyboardOpen = focused && (viewportShrink > 80 || awaitingKeyboardOpen);
       document.body.classList.toggle('keyboard-open', keyboardOpen);
       document.documentElement.style.setProperty('--app-top', '0px');
       document.documentElement.style.setProperty('--app-height', `${Math.max(maxViewportHeight, viewportHeight)}px`);
       if (!keyboardOpen || !viewportHeight) {
         keyboardShiftTarget = 0;
+        maxViewportHeight = baselineHeight;
         document.documentElement.style.setProperty('--keyboard-shift', '0px');
         keepLayoutViewportPinned();
         return false;
@@ -2859,7 +2887,7 @@
       const shiftTrimRaw = Number.parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--keyboard-shift-trim'));
       const shiftTrim = Number.isFinite(shiftTrimRaw) ? shiftTrimRaw : 36;
       const adjustedShift = clampNumber(measuredShift - shiftTrim, 0, maxShift);
-      const nextShift = Math.max(keyboardShiftTarget, adjustedShift);
+      const nextShift = adjustedShift;
       keyboardShiftTarget = Math.round(nextShift);
       document.documentElement.style.setProperty('--keyboard-shift', `${keyboardShiftTarget}px`);
       keepLayoutViewportPinned();
@@ -2944,8 +2972,9 @@
       keyboardComposerRevealDone = false;
       keyboardFocusStartedAt = 0;
       keyboardShiftTarget = 0;
+      const baseline = syncViewportBaseline({ force: true });
       document.documentElement.style.setProperty('--app-top', '0px');
-      document.documentElement.style.setProperty('--app-height', `${Math.max(maxViewportHeight, window.innerHeight || 0, document.documentElement.clientHeight || 0)}px`);
+      document.documentElement.style.setProperty('--app-height', `${baseline.height}px`);
       document.documentElement.style.setProperty('--keyboard-shift', '0px');
       keepLayoutViewportPinned();
       requestAnimationFrame(() => {
