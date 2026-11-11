@@ -1,5 +1,15 @@
 # Changelog
 
+## v5.10.2 - 2026-11-11
+
+- Improved question replies in the chat history: readable question-and-answer bubbles replace internal tags and metadata, including copied text and restored history.
+- Centered question dialogs in the visible page area, with keyboard-aware positioning, scrollable long content, and clearer light-mode text.
+- Fixed the composer being covered by the keyboard on newer iOS browsers and short or folded-screen layouts.
+- Fixed missing asynchronous questions, unrelated follow-ups being treated as answers, and older answered questions reappearing.
+- Fixed option replies being sent through the free-text path, old submissions hiding newer questions, and repeated questions not refreshing their identity.
+- Rejected outdated question submissions with an accurate message instead of reporting success.
+- Published matching Apple Silicon, Intel, Windows x64, and Android v2.0.3 universal WebView download assets.
+
 ## v5.10.1 - 2026-11-03
 
 - Fixed desktop questions not appearing on the phone on newer desktop builds: those builds moved to a different question mechanism that no longer keeps a pending request to read, so the old logic matched nothing and the question card never showed.
