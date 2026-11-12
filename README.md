@@ -23,7 +23,7 @@ GPT Mini 是一个把手机浏览器连接到电脑 ChatGPT 中 Codex 的轻量�
 
 ## 当前发布版本
 
-- 版本：v5.10.2（macOS 与 Windows 已对齐）；Android v2.0.3
+- 版本：v5.10.2（2026-11-12 修订包，macOS 与 Windows 已对齐）；Android v2.0.3
 - 🍎 macOS · Apple 芯片（M1/M2/M3/M4…）：[GPT Mini v5.10.2（Apple Silicon 版）](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.10.2/GPTMini_v5.10.2_macOS_AppleSilicon.dmg)
 - 💻 macOS · Intel 芯片（x86）：[GPT Mini v5.10.2（Intel Mac 版）](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.10.2/GPTMini_v5.10.2_macOS_Intel.dmg)
 - 🪟 Windows（10 / 11，64 位）：[GPT Mini v5.10.2（Windows 版）](https://github.com/CoimgRain/Codex-Mini/releases/download/codex-mini-v5.10.2/GPTMini_v5.10.2_Windows_Setup.exe)
@@ -36,6 +36,8 @@ GPT Mini 是一个把手机浏览器连接到电脑 ChatGPT 中 Codex 的轻量�
 >
 > 升级电脑端后，请重新扫描二维码或重新复制完整网址。iPhone / iPad 上旧的主屏幕 Web App 建议删除后，用新的 HTTPS 网址重新添加；也可以把旧网址开头的 `http://` 手动改为 `https://`。后续 HTTP 入口可能逐步停用，继续使用旧地址可能无法连接。
 
+> 已安装旧 5.10.2 的用户请重新下载并覆盖安装本次修订包；版本号保持不变，不会因同版本修订弹出升版提示。
+
 ### 最新版 V5.10.2（Mac / Windows）
 
 #### ⚡ 优化
@@ -45,6 +47,8 @@ GPT Mini 是一个把手机浏览器连接到电脑 ChatGPT 中 Codex 的轻量�
 
 #### 🐛 修复
 
+- 修复已有任务切换模型后提示失败、实际选择不同步的问题。（Mac / Windows 通用）
+- 修复推理强度列表加载不出来、切换失败及最高档位显示不一致的问题。（Mac / Windows 通用）
 - 修复新版 iOS 浏览器弹出键盘后输入框不上移，以及短屏和折叠设备上移不足、被键盘遮挡的问题。（Mac / Windows 通用）
 - 修复部分桌面提问在手机端不显示、普通追问被误判为已回答，以及已回答问题重新出现的问题。（Mac / Windows 通用）
 - 修复点击选项误走自由输入、旧问题提交误关闭新问题，以及相同文字的新提问没有刷新的问题。（Mac / Windows 通用）

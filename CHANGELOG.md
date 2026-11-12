@@ -1,7 +1,10 @@
 # Changelog
 
-## v5.10.2 - 2026-11-11
+## v5.10.2 - 2026-11-12 (revised packages; originally released 2026-11-11)
 
+- Fixed model switching failing or not reflecting the selected model in existing tasks. (Mac / Windows)
+- Fixed reasoning levels failing to load or switch, including inconsistent labels for the highest levels. (Mac / Windows)
+- Rebuilt the Mac and Windows packages with these fixes while retaining version 5.10.2. Users already on 5.10.2 should download and reinstall this revision; same-version revisions do not trigger an upgrade prompt.
 - Improved question replies in the chat history: readable question-and-answer bubbles replace internal tags and metadata, including copied text and restored history.
 - Centered question dialogs in the visible page area, with keyboard-aware positioning, scrollable long content, and clearer light-mode text.
 - Fixed the composer being covered by the keyboard on newer iOS browsers and short or folded-screen layouts.
