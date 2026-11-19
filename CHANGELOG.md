@@ -1,5 +1,21 @@
 # Changelog
 
+## v5.11.0 - 2026-11-19
+
+### 🆕 新增
+
+- **立即发送补充内容**：任务运行时，长按发送键可把补充内容直接插入当前任务，也可以继续排队。（Mac / Windows 通用）
+
+### ⚡ 优化
+
+- **提问与回答分开显示**：待回答时使用可操作的卡片，回答后聊天里只留「已回复提问」和你的选择，不再重复整组选项。（Mac / Windows 通用）
+- **待发送列表**：展开后最多显示约四条，更多内容可以滚动查看；切回对话时同步最新状态。（Mac / Windows 通用）
+
+### 🐛 修复
+
+- 修复队列交接时偶尔多出一条「正在发送」用户消息、看起来像多发了一次的问题；用户手动输入相同文字不受影响。（Mac / Windows 通用）
+- 修复带图提问偶尔漏显，以及新问题误接上一轮回复的问题；聊天中的本地图片引用可直接预览。（Mac / Windows 通用）
+
 ## v5.10.2 - 2026-11-12 (revised packages; originally released 2026-11-11)
 
 - Fixed model switching failing or not reflecting the selected model in existing tasks. (Mac / Windows)
